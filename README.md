@@ -24,6 +24,9 @@ This project aims to develop an automated framework for discovering emerging mul
 ### 2. N-gram Extraction
 
 - Extract n-grams (n = [2-5]) for experimentation and bootstrapping.
+- Current Experiements running on:
+  - 123.38 million words for the Reference Corpus
+  - 77.62 million words for the Target Corpus
 
 ### 3. Candidate MWE Extraction
 
@@ -71,6 +74,10 @@ project-root/
 │   ├── MWECandidateExtraction.ipynb # Scripts for candidate MWE extraction
 │   ├── FilterExistingMWEs.ipynb   # Filtering existing MWEs using pre-downloaded corpora
 │   ├── LLMAsAJudge.ipynb          # Prompting LLMs to annotate MWEs
+│
+├── scripts/
+│   ├── data_collection_middle_english.py 	# Scripts to download and extract n-grams from the Middle English PD dataset
+│   ├── data_collection_reddit.py		# Scripts to download and extract n-grams from the TLDR17 Reddit Dataset
 │
 ├── papers/
 │   ├── MEMES-Unidive-Submission.pdf # Accepted submission for UniDive 3rd General Meeting (HUN-REN)
